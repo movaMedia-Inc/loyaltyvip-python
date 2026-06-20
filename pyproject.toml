@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "loyaltyvip"
+version = "1.0.0"
+description = "Python client for the LoyaltyVIP API — casino player intelligence: directory, tiers, trips, offers, comps, tax."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "movaMedia" }]
+keywords = ["loyaltyvip", "casino", "loyalty", "rewards", "api", "sdk"]
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+]
+
+[project.urls]
+Homepage = "https://loyaltyvip.com/developers"
+Documentation = "https://loyaltyvip.com/developers"
+Repository = "https://github.com/movaMedia-Inc/loyaltyvip-python"
+"OpenAPI Spec" = "https://loyaltyvip.com/openapi.json"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/loyaltyvip"]
