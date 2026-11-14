@@ -8,3 +8,6 @@ dist/
 venv/
 .env
 .DS_Store
+# Claude Code local settings can hold pasted secrets
+.claude/settings.local.json
+.claude/*.local.*
